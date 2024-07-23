@@ -1,0 +1,15 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:InvokeFunction"
+            ],
+            "Resource": [
+                "arn:aws:lambda:<region>:<your_AWS_account_number>:function:<Your_lambda_function_name>:*",
+                "arn:aws:lambda:<region>:<your_AWS_account_number>:<Your_lambda_function_name>"
+            ]
+        }
+    ]
+}

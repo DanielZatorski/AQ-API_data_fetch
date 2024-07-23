@@ -1,0 +1,37 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem",
+                "dynamodb:BatchGetItem",
+                "dynamodb:BatchWriteItem",
+                "dynamodb:Query",
+                "dynamodb:Scan"
+            ],
+            "Resource": "arn:aws:dynamodb:<your_server>:<your_AWS_account_number>:table/<your_DB_table>"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "events:PutRule",
+                "events:PutTargets",
+                "events:DescribeRule",
+                "events:ListTargetsByRule",
+                "events:RemoveTargets",
+                "events:DeleteRule"
+            ],
+            "Resource": "arn:aws:events:<your_server>:<your_AWS_account_number>:rule/<Your_Event_Bridge_rule>"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "lambda:InvokeFunction"
+            ],
+            "Resource": "arn:aws:lambda:<your_server>:<your_AWS_account_number>:function:<Your_lambda_function_name>"
+        }
+    ]
+}
