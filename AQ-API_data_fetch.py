@@ -6,6 +6,7 @@ from botocore.exceptions import ClientError
 from decimal import Decimal
 
 #Initialize tables
+
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('your_table_name') #your dynamoDB table
 
