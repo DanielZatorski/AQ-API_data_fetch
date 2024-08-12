@@ -7,6 +7,8 @@ This repository is designed to demonstrate the process of creating a simple and 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![API](https://img.shields.io/badge/API-FF6C37?style=for-the-badge&logo=appveyor&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazondynamodb&logoColor=white)
+
 
 ## Project Overview
 
