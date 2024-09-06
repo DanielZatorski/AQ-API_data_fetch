@@ -15,11 +15,11 @@ table = dynamodb.Table('your_table_name') #your dynamoDB table
 def get_measurements(api_key, cities_data):
     measurements = []
     url = 'https://api.openaq.org/v2/measurements'
-    headers = {"accept": "application/json"}
+    headers = {"accept": "application/json",
+                "x-api-key": api_key}
 
     for city in cities_data:
         params = {
-            'apikey': api_key,
             'limit': 1,
             'city': city,
             'parameter_id': 2,  # based on PM2.5 data
